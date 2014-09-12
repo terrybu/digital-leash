@@ -23,11 +23,15 @@
 //Action buttons
 - (IBAction)createNewUserButton:(id)sender;
 - (IBAction)updateUserButton:(id)sender;
-
 - (IBAction)checkLocationButton:(id)sender;
 
 
-//just a label that changes to notify confirmation when user clicks on "create new user" or "update existing user"
+
+//textfield that populates for YES or NO for Zone confirmation
+@property (strong, nonatomic) IBOutlet UITextField *zoneConfirmationField;
+
+
+//label that changes to notify confirmation when user clicks on "create new user" or "update existing user"
 @property (strong, nonatomic) IBOutlet UILabel *ConfirmLabel;
 
 

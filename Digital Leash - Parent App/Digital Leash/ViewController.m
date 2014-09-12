@@ -73,8 +73,9 @@
 
 
 
+
+#pragma mark IBAction Methods
 - (IBAction)createNewUserButton:(id)sender {
-    
     if (self.usernameTextfield.text && self.usernameTextfield.text.length > 0) {
         //creating the request URL
         NSURL *requestURL = [NSURL URLWithString:@"http://protected-wildwood-8664.herokuapp.com/users"];
@@ -148,6 +149,8 @@
     NSURLConnection *connect = [[NSURLConnection alloc] initWithRequest: self.myURLRequest delegate: self];
     connect = nil;
     
+    [self.usernameTextfield resignFirstResponder];
+
 }
 
 
@@ -228,10 +231,14 @@
     
     if ([responseDataInNSDictionary[@"is_in_zone"]boolValue ] == YES) {
         NSLog(@"In Zone");
+        self.zoneConfirmationField.text = @"YES";
+        self.zoneConfirmationField.backgroundColor = [UIColor greenColor];
     }
     else {
         NSLog(@"Not in Zone");
-    }
+        self.zoneConfirmationField.text = @"NO";
+        self.zoneConfirmationField.backgroundColor = [UIColor redColor];
+        }
     
     
 }

@@ -134,6 +134,7 @@
                         <outlet property="longitudeTextfield" destination="z37-3N-ypo" id="fEL-S7-Cff"/>
                         <outlet property="radiusTextfield" destination="Fe7-zP-9Wa" id="wnm-EH-KFU"/>
                         <outlet property="usernameTextfield" destination="ufZ-PZ-OgR" id="VuL-wW-03b"/>
+                        <outlet property="zoneConfirmationField" destination="auX-o7-k5I" id="O49-ZZ-DCH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
