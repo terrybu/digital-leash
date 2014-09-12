@@ -1,0 +1,475 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AAD014F819C372BF00DB1412 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAD014F719C372BF00DB1412 /* Foundation.framework */; };
+		AAD014FA19C372BF00DB1412 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAD014F919C372BF00DB1412 /* CoreGraphics.framework */; };
+		AAD014FC19C372BF00DB1412 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAD014FB19C372BF00DB1412 /* UIKit.framework */; };
+		AAD0150219C372BF00DB1412 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AAD0150019C372BF00DB1412 /* InfoPlist.strings */; };
+		AAD0150419C372BF00DB1412 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AAD0150319C372BF00DB1412 /* main.m */; };
+		AAD0150819C372BF00DB1412 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AAD0150719C372BF00DB1412 /* AppDelegate.m */; };
+		AAD0150B19C372BF00DB1412 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAD0150919C372BF00DB1412 /* Main.storyboard */; };
+		AAD0150E19C372BF00DB1412 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AAD0150D19C372BF00DB1412 /* ViewController.m */; };
+		AAD0151019C372BF00DB1412 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AAD0150F19C372BF00DB1412 /* Images.xcassets */; };
+		AAD0151719C372BF00DB1412 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAD0151619C372BF00DB1412 /* XCTest.framework */; };
+		AAD0151819C372BF00DB1412 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAD014F719C372BF00DB1412 /* Foundation.framework */; };
+		AAD0151919C372BF00DB1412 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAD014FB19C372BF00DB1412 /* UIKit.framework */; };
+		AAD0152119C372BF00DB1412 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AAD0151F19C372BF00DB1412 /* InfoPlist.strings */; };
+		AAD0152319C372BF00DB1412 /* childapp_digital_leashTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AAD0152219C372BF00DB1412 /* childapp_digital_leashTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AAD0151A19C372BF00DB1412 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AAD014EC19C372BF00DB1412 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AAD014F319C372BF00DB1412;
+			remoteInfo = childapp_digital_leash;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AAD014F419C372BF00DB1412 /* childapp_digital_leash.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = childapp_digital_leash.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AAD014F719C372BF00DB1412 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		AAD014F919C372BF00DB1412 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		AAD014FB19C372BF00DB1412 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		AAD014FF19C372BF00DB1412 /* childapp_digital_leash-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "childapp_digital_leash-Info.plist"; sourceTree = "<group>"; };
+		AAD0150119C372BF00DB1412 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		AAD0150319C372BF00DB1412 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AAD0150519C372BF00DB1412 /* childapp_digital_leash-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "childapp_digital_leash-Prefix.pch"; sourceTree = "<group>"; };
+		AAD0150619C372BF00DB1412 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		AAD0150719C372BF00DB1412 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		AAD0150A19C372BF00DB1412 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AAD0150C19C372BF00DB1412 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		AAD0150D19C372BF00DB1412 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		AAD0150F19C372BF00DB1412 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		AAD0151519C372BF00DB1412 /* childapp_digital_leashTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = childapp_digital_leashTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AAD0151619C372BF00DB1412 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		AAD0151E19C372BF00DB1412 /* childapp_digital_leashTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "childapp_digital_leashTests-Info.plist"; sourceTree = "<group>"; };
+		AAD0152019C372BF00DB1412 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		AAD0152219C372BF00DB1412 /* childapp_digital_leashTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = childapp_digital_leashTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AAD014F119C372BF00DB1412 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AAD014FA19C372BF00DB1412 /* CoreGraphics.framework in Frameworks */,
+				AAD014FC19C372BF00DB1412 /* UIKit.framework in Frameworks */,
+				AAD014F819C372BF00DB1412 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AAD0151219C372BF00DB1412 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AAD0151719C372BF00DB1412 /* XCTest.framework in Frameworks */,
+				AAD0151919C372BF00DB1412 /* UIKit.framework in Frameworks */,
+				AAD0151819C372BF00DB1412 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AAD014EB19C372BF00DB1412 = {
+			isa = PBXGroup;
+			children = (
+				AAD014FD19C372BF00DB1412 /* childapp_digital_leash */,
+				AAD0151C19C372BF00DB1412 /* childapp_digital_leashTests */,
+				AAD014F619C372BF00DB1412 /* Frameworks */,
+				AAD014F519C372BF00DB1412 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AAD014F519C372BF00DB1412 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AAD014F419C372BF00DB1412 /* childapp_digital_leash.app */,
+				AAD0151519C372BF00DB1412 /* childapp_digital_leashTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AAD014F619C372BF00DB1412 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AAD014F719C372BF00DB1412 /* Foundation.framework */,
+				AAD014F919C372BF00DB1412 /* CoreGraphics.framework */,
+				AAD014FB19C372BF00DB1412 /* UIKit.framework */,
+				AAD0151619C372BF00DB1412 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AAD014FD19C372BF00DB1412 /* childapp_digital_leash */ = {
+			isa = PBXGroup;
+			children = (
+				AAD0150619C372BF00DB1412 /* AppDelegate.h */,
+				AAD0150719C372BF00DB1412 /* AppDelegate.m */,
+				AAD0150919C372BF00DB1412 /* Main.storyboard */,
+				AAD0150C19C372BF00DB1412 /* ViewController.h */,
+				AAD0150D19C372BF00DB1412 /* ViewController.m */,
+				AAD0150F19C372BF00DB1412 /* Images.xcassets */,
+				AAD014FE19C372BF00DB1412 /* Supporting Files */,
+			);
+			path = childapp_digital_leash;
+			sourceTree = "<group>";
+		};
+		AAD014FE19C372BF00DB1412 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AAD014FF19C372BF00DB1412 /* childapp_digital_leash-Info.plist */,
+				AAD0150019C372BF00DB1412 /* InfoPlist.strings */,
+				AAD0150319C372BF00DB1412 /* main.m */,
+				AAD0150519C372BF00DB1412 /* childapp_digital_leash-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AAD0151C19C372BF00DB1412 /* childapp_digital_leashTests */ = {
+			isa = PBXGroup;
+			children = (
+				AAD0152219C372BF00DB1412 /* childapp_digital_leashTests.m */,
+				AAD0151D19C372BF00DB1412 /* Supporting Files */,
+			);
+			path = childapp_digital_leashTests;
+			sourceTree = "<group>";
+		};
+		AAD0151D19C372BF00DB1412 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AAD0151E19C372BF00DB1412 /* childapp_digital_leashTests-Info.plist */,
+				AAD0151F19C372BF00DB1412 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AAD014F319C372BF00DB1412 /* childapp_digital_leash */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AAD0152619C372BF00DB1412 /* Build configuration list for PBXNativeTarget "childapp_digital_leash" */;
+			buildPhases = (
+				AAD014F019C372BF00DB1412 /* Sources */,
+				AAD014F119C372BF00DB1412 /* Frameworks */,
+				AAD014F219C372BF00DB1412 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = childapp_digital_leash;
+			productName = childapp_digital_leash;
+			productReference = AAD014F419C372BF00DB1412 /* childapp_digital_leash.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AAD0151419C372BF00DB1412 /* childapp_digital_leashTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AAD0152919C372BF00DB1412 /* Build configuration list for PBXNativeTarget "childapp_digital_leashTests" */;
+			buildPhases = (
+				AAD0151119C372BF00DB1412 /* Sources */,
+				AAD0151219C372BF00DB1412 /* Frameworks */,
+				AAD0151319C372BF00DB1412 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AAD0151B19C372BF00DB1412 /* PBXTargetDependency */,
+			);
+			name = childapp_digital_leashTests;
+			productName = childapp_digital_leashTests;
+			productReference = AAD0151519C372BF00DB1412 /* childapp_digital_leashTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AAD014EC19C372BF00DB1412 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = NM;
+				TargetAttributes = {
+					AAD0151419C372BF00DB1412 = {
+						TestTargetID = AAD014F319C372BF00DB1412;
+					};
+				};
+			};
+			buildConfigurationList = AAD014EF19C372BF00DB1412 /* Build configuration list for PBXProject "childapp_digital_leash" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AAD014EB19C372BF00DB1412;
+			productRefGroup = AAD014F519C372BF00DB1412 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AAD014F319C372BF00DB1412 /* childapp_digital_leash */,
+				AAD0151419C372BF00DB1412 /* childapp_digital_leashTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AAD014F219C372BF00DB1412 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AAD0151019C372BF00DB1412 /* Images.xcassets in Resources */,
+				AAD0150219C372BF00DB1412 /* InfoPlist.strings in Resources */,
+				AAD0150B19C372BF00DB1412 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AAD0151319C372BF00DB1412 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AAD0152119C372BF00DB1412 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AAD014F019C372BF00DB1412 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AAD0150E19C372BF00DB1412 /* ViewController.m in Sources */,
+				AAD0150819C372BF00DB1412 /* AppDelegate.m in Sources */,
+				AAD0150419C372BF00DB1412 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AAD0151119C372BF00DB1412 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AAD0152319C372BF00DB1412 /* childapp_digital_leashTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AAD0151B19C372BF00DB1412 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AAD014F319C372BF00DB1412 /* childapp_digital_leash */;
+			targetProxy = AAD0151A19C372BF00DB1412 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AAD0150019C372BF00DB1412 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AAD0150119C372BF00DB1412 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		AAD0150919C372BF00DB1412 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AAD0150A19C372BF00DB1412 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AAD0151F19C372BF00DB1412 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AAD0152019C372BF00DB1412 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AAD0152419C372BF00DB1412 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		AAD0152519C372BF00DB1412 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AAD0152719C372BF00DB1412 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "childapp_digital_leash/childapp_digital_leash-Prefix.pch";
+				INFOPLIST_FILE = "childapp_digital_leash/childapp_digital_leash-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		AAD0152819C372BF00DB1412 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "childapp_digital_leash/childapp_digital_leash-Prefix.pch";
+				INFOPLIST_FILE = "childapp_digital_leash/childapp_digital_leash-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		AAD0152A19C372BF00DB1412 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/childapp_digital_leash.app/childapp_digital_leash";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "childapp_digital_leash/childapp_digital_leash-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "childapp_digital_leashTests/childapp_digital_leashTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		AAD0152B19C372BF00DB1412 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/childapp_digital_leash.app/childapp_digital_leash";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "childapp_digital_leash/childapp_digital_leash-Prefix.pch";
+				INFOPLIST_FILE = "childapp_digital_leashTests/childapp_digital_leashTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AAD014EF19C372BF00DB1412 /* Build configuration list for PBXProject "childapp_digital_leash" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AAD0152419C372BF00DB1412 /* Debug */,
+				AAD0152519C372BF00DB1412 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AAD0152619C372BF00DB1412 /* Build configuration list for PBXNativeTarget "childapp_digital_leash" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AAD0152719C372BF00DB1412 /* Debug */,
+				AAD0152819C372BF00DB1412 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		AAD0152919C372BF00DB1412 /* Build configuration list for PBXNativeTarget "childapp_digital_leashTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AAD0152A19C372BF00DB1412 /* Debug */,
+				AAD0152B19C372BF00DB1412 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AAD014EC19C372BF00DB1412 /* Project object */;
+}
