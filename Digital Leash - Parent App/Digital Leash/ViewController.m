@@ -107,7 +107,7 @@
 
     else {
         NSLog(@"string too short");
-        //Making a popup alert dialog WOOO
+        //Making a popup alert dialog
         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Your username is too short"
                                                         message:@"Obviously, your username has to be at least 1 character"
                                                        delegate:nil

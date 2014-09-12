@@ -25,6 +25,7 @@
     [locationManager startUpdatingLocation];
     NSLog(@"Started updating Location");
     
+    
     //implementing return-key keyboard clear
     [self.usernameTextfield setDelegate:self];
     
@@ -56,7 +57,31 @@
 
 
 
+#pragma mark - IBAction Methods
 - (IBAction)startUpdatingButton:(id)sender {
+    username = self.usernameTextfield.text;
+    
+    if (username.length > 0) {
+    NSDictionary *childDict = @{
+                                @"user":@{
+                                        @"username": username,
+                                        @"current_lat": latitude,
+                                        @"current_longitude": longitude
+                                        },
+                                @"commit":@"Create User",
+                                @"action":@"update",
+                                @"controller":@"users"
+                                };
+    }
+    else {
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Your username is too short"
+                                                        message:@"Obviously, your username has to be at least 1 character"
+                                                       delegate:nil
+                                              cancelButtonTitle:@"OK"
+                                              otherButtonTitles:nil];
+        [alert show];
+    }
+
 }
 
 

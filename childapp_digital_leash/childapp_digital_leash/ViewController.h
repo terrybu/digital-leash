@@ -12,14 +12,14 @@
 @interface ViewController : UIViewController <CLLocationManagerDelegate, NSURLConnectionDelegate, UITextFieldDelegate> {
     
     CLLocationManager *locationManager;
-    NSString *latitude, *longitude;
+    NSString *latitude, *longitude, *username;
     int callCount;
     
 }
 
 
 //properties
-@property (nonatomic) NSString *username;
+//@property (nonatomic) NSString *username;
 
 
 //IBOutlets
