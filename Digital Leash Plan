@@ -1,0 +1,21 @@
+parent create a new username
+they set a "zone" by declaring a location and the radius distance for the zone
+the DEFAULT location is their current location
+two buttons for the parent app
+Create New User
+Check Location
+
+child logs in using same username
+child constantly reporting its location
+
+Parent press a button to check with server "is the child in the zone or not in the zone?"
+
+NO PASSWORDS
+
+
+
+Digital Leash Plan
+
+Longitude
+Latitude
+

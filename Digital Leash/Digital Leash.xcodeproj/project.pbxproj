@@ -1,0 +1,475 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AA981B8A19BE585E00F8B1FB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA981B8919BE585E00F8B1FB /* Foundation.framework */; };
+		AA981B8C19BE585E00F8B1FB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA981B8B19BE585E00F8B1FB /* CoreGraphics.framework */; };
+		AA981B8E19BE585E00F8B1FB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA981B8D19BE585E00F8B1FB /* UIKit.framework */; };
+		AA981B9419BE585E00F8B1FB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AA981B9219BE585E00F8B1FB /* InfoPlist.strings */; };
+		AA981B9619BE585E00F8B1FB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AA981B9519BE585E00F8B1FB /* main.m */; };
+		AA981B9A19BE585E00F8B1FB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AA981B9919BE585E00F8B1FB /* AppDelegate.m */; };
+		AA981B9D19BE585E00F8B1FB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA981B9B19BE585E00F8B1FB /* Main.storyboard */; };
+		AA981BA019BE585E00F8B1FB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA981B9F19BE585E00F8B1FB /* ViewController.m */; };
+		AA981BA219BE585E00F8B1FB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA981BA119BE585E00F8B1FB /* Images.xcassets */; };
+		AA981BA919BE585E00F8B1FB /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA981BA819BE585E00F8B1FB /* XCTest.framework */; };
+		AA981BAA19BE585E00F8B1FB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA981B8919BE585E00F8B1FB /* Foundation.framework */; };
+		AA981BAB19BE585E00F8B1FB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA981B8D19BE585E00F8B1FB /* UIKit.framework */; };
+		AA981BB319BE585E00F8B1FB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AA981BB119BE585E00F8B1FB /* InfoPlist.strings */; };
+		AA981BB519BE585E00F8B1FB /* Digital_LeashTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AA981BB419BE585E00F8B1FB /* Digital_LeashTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AA981BAC19BE585E00F8B1FB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AA981B7E19BE585E00F8B1FB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AA981B8519BE585E00F8B1FB;
+			remoteInfo = "Digital Leash";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AA981B8619BE585E00F8B1FB /* Digital Leash.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Digital Leash.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA981B8919BE585E00F8B1FB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		AA981B8B19BE585E00F8B1FB /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		AA981B8D19BE585E00F8B1FB /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		AA981B9119BE585E00F8B1FB /* Digital Leash-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Digital Leash-Info.plist"; sourceTree = "<group>"; };
+		AA981B9319BE585E00F8B1FB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		AA981B9519BE585E00F8B1FB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AA981B9719BE585E00F8B1FB /* Digital Leash-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Digital Leash-Prefix.pch"; sourceTree = "<group>"; };
+		AA981B9819BE585E00F8B1FB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		AA981B9919BE585E00F8B1FB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		AA981B9C19BE585E00F8B1FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AA981B9E19BE585E00F8B1FB /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		AA981B9F19BE585E00F8B1FB /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		AA981BA119BE585E00F8B1FB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		AA981BA719BE585E00F8B1FB /* Digital LeashTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Digital LeashTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA981BA819BE585E00F8B1FB /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		AA981BB019BE585E00F8B1FB /* Digital LeashTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Digital LeashTests-Info.plist"; sourceTree = "<group>"; };
+		AA981BB219BE585E00F8B1FB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		AA981BB419BE585E00F8B1FB /* Digital_LeashTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Digital_LeashTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AA981B8319BE585E00F8B1FB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA981B8C19BE585E00F8B1FB /* CoreGraphics.framework in Frameworks */,
+				AA981B8E19BE585E00F8B1FB /* UIKit.framework in Frameworks */,
+				AA981B8A19BE585E00F8B1FB /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA981BA419BE585E00F8B1FB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA981BA919BE585E00F8B1FB /* XCTest.framework in Frameworks */,
+				AA981BAB19BE585E00F8B1FB /* UIKit.framework in Frameworks */,
+				AA981BAA19BE585E00F8B1FB /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AA981B7D19BE585E00F8B1FB = {
+			isa = PBXGroup;
+			children = (
+				AA981B8F19BE585E00F8B1FB /* Digital Leash */,
+				AA981BAE19BE585E00F8B1FB /* Digital LeashTests */,
+				AA981B8819BE585E00F8B1FB /* Frameworks */,
+				AA981B8719BE585E00F8B1FB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AA981B8719BE585E00F8B1FB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AA981B8619BE585E00F8B1FB /* Digital Leash.app */,
+				AA981BA719BE585E00F8B1FB /* Digital LeashTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AA981B8819BE585E00F8B1FB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AA981B8919BE585E00F8B1FB /* Foundation.framework */,
+				AA981B8B19BE585E00F8B1FB /* CoreGraphics.framework */,
+				AA981B8D19BE585E00F8B1FB /* UIKit.framework */,
+				AA981BA819BE585E00F8B1FB /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AA981B8F19BE585E00F8B1FB /* Digital Leash */ = {
+			isa = PBXGroup;
+			children = (
+				AA981B9819BE585E00F8B1FB /* AppDelegate.h */,
+				AA981B9919BE585E00F8B1FB /* AppDelegate.m */,
+				AA981B9B19BE585E00F8B1FB /* Main.storyboard */,
+				AA981B9E19BE585E00F8B1FB /* ViewController.h */,
+				AA981B9F19BE585E00F8B1FB /* ViewController.m */,
+				AA981BA119BE585E00F8B1FB /* Images.xcassets */,
+				AA981B9019BE585E00F8B1FB /* Supporting Files */,
+			);
+			path = "Digital Leash";
+			sourceTree = "<group>";
+		};
+		AA981B9019BE585E00F8B1FB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AA981B9119BE585E00F8B1FB /* Digital Leash-Info.plist */,
+				AA981B9219BE585E00F8B1FB /* InfoPlist.strings */,
+				AA981B9519BE585E00F8B1FB /* main.m */,
+				AA981B9719BE585E00F8B1FB /* Digital Leash-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AA981BAE19BE585E00F8B1FB /* Digital LeashTests */ = {
+			isa = PBXGroup;
+			children = (
+				AA981BB419BE585E00F8B1FB /* Digital_LeashTests.m */,
+				AA981BAF19BE585E00F8B1FB /* Supporting Files */,
+			);
+			path = "Digital LeashTests";
+			sourceTree = "<group>";
+		};
+		AA981BAF19BE585E00F8B1FB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AA981BB019BE585E00F8B1FB /* Digital LeashTests-Info.plist */,
+				AA981BB119BE585E00F8B1FB /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AA981B8519BE585E00F8B1FB /* Digital Leash */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AA981BB819BE585E00F8B1FB /* Build configuration list for PBXNativeTarget "Digital Leash" */;
+			buildPhases = (
+				AA981B8219BE585E00F8B1FB /* Sources */,
+				AA981B8319BE585E00F8B1FB /* Frameworks */,
+				AA981B8419BE585E00F8B1FB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Digital Leash";
+			productName = "Digital Leash";
+			productReference = AA981B8619BE585E00F8B1FB /* Digital Leash.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AA981BA619BE585E00F8B1FB /* Digital LeashTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AA981BBB19BE585E00F8B1FB /* Build configuration list for PBXNativeTarget "Digital LeashTests" */;
+			buildPhases = (
+				AA981BA319BE585E00F8B1FB /* Sources */,
+				AA981BA419BE585E00F8B1FB /* Frameworks */,
+				AA981BA519BE585E00F8B1FB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AA981BAD19BE585E00F8B1FB /* PBXTargetDependency */,
+			);
+			name = "Digital LeashTests";
+			productName = "Digital LeashTests";
+			productReference = AA981BA719BE585E00F8B1FB /* Digital LeashTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AA981B7E19BE585E00F8B1FB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = NM;
+				TargetAttributes = {
+					AA981BA619BE585E00F8B1FB = {
+						TestTargetID = AA981B8519BE585E00F8B1FB;
+					};
+				};
+			};
+			buildConfigurationList = AA981B8119BE585E00F8B1FB /* Build configuration list for PBXProject "Digital Leash" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AA981B7D19BE585E00F8B1FB;
+			productRefGroup = AA981B8719BE585E00F8B1FB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AA981B8519BE585E00F8B1FB /* Digital Leash */,
+				AA981BA619BE585E00F8B1FB /* Digital LeashTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AA981B8419BE585E00F8B1FB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA981BA219BE585E00F8B1FB /* Images.xcassets in Resources */,
+				AA981B9419BE585E00F8B1FB /* InfoPlist.strings in Resources */,
+				AA981B9D19BE585E00F8B1FB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA981BA519BE585E00F8B1FB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA981BB319BE585E00F8B1FB /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AA981B8219BE585E00F8B1FB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA981BA019BE585E00F8B1FB /* ViewController.m in Sources */,
+				AA981B9A19BE585E00F8B1FB /* AppDelegate.m in Sources */,
+				AA981B9619BE585E00F8B1FB /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA981BA319BE585E00F8B1FB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA981BB519BE585E00F8B1FB /* Digital_LeashTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AA981BAD19BE585E00F8B1FB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AA981B8519BE585E00F8B1FB /* Digital Leash */;
+			targetProxy = AA981BAC19BE585E00F8B1FB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AA981B9219BE585E00F8B1FB /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AA981B9319BE585E00F8B1FB /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		AA981B9B19BE585E00F8B1FB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AA981B9C19BE585E00F8B1FB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AA981BB119BE585E00F8B1FB /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AA981BB219BE585E00F8B1FB /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AA981BB619BE585E00F8B1FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		AA981BB719BE585E00F8B1FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AA981BB919BE585E00F8B1FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Digital Leash/Digital Leash-Prefix.pch";
+				INFOPLIST_FILE = "Digital Leash/Digital Leash-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		AA981BBA19BE585E00F8B1FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Digital Leash/Digital Leash-Prefix.pch";
+				INFOPLIST_FILE = "Digital Leash/Digital Leash-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		AA981BBC19BE585E00F8B1FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Digital Leash.app/Digital Leash";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Digital Leash/Digital Leash-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Digital LeashTests/Digital LeashTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		AA981BBD19BE585E00F8B1FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Digital Leash.app/Digital Leash";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Digital Leash/Digital Leash-Prefix.pch";
+				INFOPLIST_FILE = "Digital LeashTests/Digital LeashTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AA981B8119BE585E00F8B1FB /* Build configuration list for PBXProject "Digital Leash" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA981BB619BE585E00F8B1FB /* Debug */,
+				AA981BB719BE585E00F8B1FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AA981BB819BE585E00F8B1FB /* Build configuration list for PBXNativeTarget "Digital Leash" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA981BB919BE585E00F8B1FB /* Debug */,
+				AA981BBA19BE585E00F8B1FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		AA981BBB19BE585E00F8B1FB /* Build configuration list for PBXNativeTarget "Digital LeashTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA981BBC19BE585E00F8B1FB /* Debug */,
+				AA981BBD19BE585E00F8B1FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AA981B7E19BE585E00F8B1FB /* Project object */;
+}
