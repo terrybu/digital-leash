@@ -133,8 +133,7 @@
                                       };
         NSError *error;
         NSData *jsonData = [NSJSONSerialization dataWithJSONObject:userDetails options:0 error:&error];
-        NSString *myJSONString;
-        myJSONString = [[NSString alloc] initWithData:jsonData encoding:NSUTF8StringEncoding];
+        NSString *myJSONString = [[NSString alloc] initWithData:jsonData encoding:NSUTF8StringEncoding];
         NSData *myJSONrequest = [myJSONString dataUsingEncoding:NSUTF8StringEncoding];
         self.myURLRequest = [NSMutableURLRequest requestWithURL:requestURL];
         self.myURLRequest.HTTPMethod = @"PATCH";
