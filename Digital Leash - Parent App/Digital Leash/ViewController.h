@@ -11,6 +11,8 @@
 
 @interface ViewController : UIViewController <CLLocationManagerDelegate, NSURLConnectionDelegate, UITextFieldDelegate> {
     
+    NSMutableData *responseData;
+    
 }
 
 //For Input Username and Create New User
@@ -22,6 +24,7 @@
 - (IBAction)createNewUserButton:(id)sender;
 - (IBAction)updateUserButton:(id)sender;
 
+- (IBAction)checkLocationButton:(id)sender;
 
 
 //just a label that changes to notify confirmation when user clicks on "create new user" or "update existing user"

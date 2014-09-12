@@ -19,6 +19,8 @@
 {
     [super viewDidLoad];
     
+    responseData = [NSMutableData data];
+    
     
     //For CLLocation
     if([CLLocationManager locationServicesEnabled]){
@@ -119,37 +121,7 @@
 
 - (IBAction)updateUserButton:(id)sender {
     if (self.usernameTextfield.text && self.usernameTextfield.text.length > 0) {
-        //creating the request URL
-        NSString *urlstring = [NSString stringWithFormat: @"http://protected-wildwood-8664.herokuapp.com/users/%@", self.usernameTextfield.text];
-        NSURL *requestURL = [NSURL URLWithString:urlstring];
-        NSDictionary *userDetails = @{@"user": @{
-                                              @"username": self.usernameTextfield.text,
-                                              @"latitude": self.latitudeTextfield.text,
-                                              @"longitude": self.longitudeTextfield.text,
-                                              @"radius": self.radiusTextfield.text},
-                                      @"commit":@"Create User",
-                                      @"action":@"update",
-                                      @"controller":@"users"
-                                      };
-        NSError *error;
-        NSData *jsonData = [NSJSONSerialization dataWithJSONObject:userDetails options:0 error:&error];
-        NSString *myJSONString = [[NSString alloc] initWithData:jsonData encoding:NSUTF8StringEncoding];
-        NSData *myJSONrequest = [myJSONString dataUsingEncoding:NSUTF8StringEncoding];
-        self.myURLRequest = [NSMutableURLRequest requestWithURL:requestURL];
-        self.myURLRequest.HTTPMethod = @"PATCH";
-        [self.myURLRequest setValue:@"application/json; charset=utf-8" forHTTPHeaderField:@"Content-Type"];
-        [self.myURLRequest setHTTPBody: myJSONrequest];
-        
-        //create url connection and fire the request you made above
-        NSURLConnection *connect = [[NSURLConnection alloc] initWithRequest: self.myURLRequest delegate: self];
-        connect = nil;
-        
-        
-        //Post-Request Confirmation
-        self.ConfirmLabel.text = [NSString stringWithFormat:@"You updated it, %@!",self.usernameTextfield.text];
-        self.tempStringHolder = self.usernameTextfield.text;
-//        self.usernameTextfield.text = @"";
-        
+        [self zipItUpAndSendYourRequest];
     }
     
     else {
@@ -164,6 +136,54 @@
     }
 }
 
+- (IBAction)checkLocationButton:(id)sender {
+    //creating the request URL
+    NSString *urlstring = [NSString stringWithFormat: @"http://protected-wildwood-8664.herokuapp.com/users/%@.json", self.usernameTextfield.text];
+    NSURL *requestURL = [NSURL URLWithString:urlstring];
+    self.myURLRequest = [NSMutableURLRequest requestWithURL:requestURL];
+    self.myURLRequest.HTTPMethod = @"GET";
+    [self.myURLRequest setValue:@"application/json; charset=utf-8" forHTTPHeaderField:@"Content-Type"];
+    
+    //create url connection and fire the request you made above
+    NSURLConnection *connect = [[NSURLConnection alloc] initWithRequest: self.myURLRequest delegate: self];
+    connect = nil;
+    
+}
+
+
+#pragma mark Terry's Custom Methods
+- (void) zipItUpAndSendYourRequest {
+    //creating the request URL
+    NSString *urlstring = [NSString stringWithFormat: @"http://protected-wildwood-8664.herokuapp.com/users/%@", self.usernameTextfield.text];
+    NSURL *requestURL = [NSURL URLWithString:urlstring];
+    NSDictionary *userDetails = @{@"user": @{
+                                          @"username": self.usernameTextfield.text,
+                                          @"latitude": self.latitudeTextfield.text,
+                                          @"longitude": self.longitudeTextfield.text,
+                                          @"radius": self.radiusTextfield.text},
+                                  @"commit":@"Create User",
+                                  @"action":@"update",
+                                  @"controller":@"users"
+                                  };
+    NSError *error;
+    NSData *jsonData = [NSJSONSerialization dataWithJSONObject:userDetails options:0 error:&error];
+    NSString *myJSONString = [[NSString alloc] initWithData:jsonData encoding:NSUTF8StringEncoding];
+    NSData *myJSONrequest = [myJSONString dataUsingEncoding:NSUTF8StringEncoding];
+    self.myURLRequest = [NSMutableURLRequest requestWithURL:requestURL];
+    self.myURLRequest.HTTPMethod = @"PATCH";
+    [self.myURLRequest setValue:@"application/json; charset=utf-8" forHTTPHeaderField:@"Content-Type"];
+    [self.myURLRequest setHTTPBody: myJSONrequest];
+    
+    //create url connection and fire the request you made above
+    NSURLConnection *connect = [[NSURLConnection alloc] initWithRequest: self.myURLRequest delegate: self];
+    connect = nil;
+    
+    
+    //Post-Request Confirmation
+    self.ConfirmLabel.text = [NSString stringWithFormat:@"You updated it, %@!",self.usernameTextfield.text];
+    self.tempStringHolder = self.usernameTextfield.text;
+}
+
 
 #pragma mark NSURLConnection Delegate Methods
 
@@ -173,11 +193,15 @@
     //then we append data to it in the didReceiveData method
     //    responseData = [[NSMutableData alloc] init];
     NSLog(@"%@", [response description]);
+    [responseData setLength:0];
 }
 
-- (void)connection: (NSURLConnection *)connection didReceiveData:(NSData *) dataYouGot {
+- (void)connection: (NSURLConnection *)connection didReceiveData:(NSData *) data {
     //this handler, gets hit SEVERAL TIMES
     //Append new data to the instance variable everytime new data comes in
+    
+    [responseData appendData:data];
+    
 }
 
 - (NSCachedURLResponse *)connection:(NSURLConnection *)connection willCacheResponse:(NSCachedURLResponse *)cachedResponse {
@@ -191,7 +215,25 @@
     // You can parse the stuff in your instance variable now or do whatever you want
     
     NSLog(@"connection finished");
-    NSLog(@"%@ was created/updated on Oren's server", self.tempStringHolder);
+    NSLog(@"Succeeded! Received %d bytes of data",[responseData length]);
+    
+    //Convert your responseData object
+    
+    NSError *myError = nil;
+    NSDictionary *responseDataInNSDictionary = [NSJSONSerialization JSONObjectWithData:responseData options:NSJSONReadingMutableLeaves error:&myError];
+    
+    
+    //Log it
+    NSLog(@"%@", responseDataInNSDictionary[@"is_in_zone"]);
+    
+    if ([responseDataInNSDictionary[@"is_in_zone"]boolValue ] == YES) {
+        NSLog(@"In Zone");
+    }
+    else {
+        NSLog(@"Not in Zone");
+    }
+    
+    
 }
 
 - (void)connection:(NSURLConnection *)connection didFailWithError:(NSError *)error {
