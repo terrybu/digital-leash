@@ -73,7 +73,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                <textInputTraits key="textInputTraits" keyboardType="decimalPad" enablesReturnKeyAutomatically="YES"/>
+                                <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES"/>
                             </textField>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Longitude" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wDT-1Z-wFV">
                                 <rect key="frame" x="57" y="424" width="65" height="21"/>
@@ -119,14 +119,14 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="createNewUserButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="KXg-4U-dFY"/>
+                                    <action selector="updateUserButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Gpb-SZ-r6Y"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <connections>
-                        <outlet property="createNewUserConfirmLabel" destination="Jvr-yx-Me1" id="H1F-UN-QIw"/>
+                        <outlet property="ConfirmLabel" destination="Jvr-yx-Me1" id="I4u-zB-oow"/>
                         <outlet property="latitudeTextfield" destination="qrj-hD-NrU" id="dBP-qX-on3"/>
                         <outlet property="longitudeTextfield" destination="z37-3N-ypo" id="fEL-S7-Cff"/>
                         <outlet property="radiusTextfield" destination="Fe7-zP-9Wa" id="wnm-EH-KFU"/>

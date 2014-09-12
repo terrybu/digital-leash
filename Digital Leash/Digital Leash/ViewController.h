@@ -17,9 +17,15 @@
 @property (strong, nonatomic) IBOutlet UITextField *usernameTextfield;
 @property (strong, nonatomic) NSString *tempStringHolder;
 
-- (IBAction)createNewUserButton:(id)sender;
 
-@property (strong, nonatomic) IBOutlet UILabel *createNewUserConfirmLabel;
+//Action buttons
+- (IBAction)createNewUserButton:(id)sender;
+- (IBAction)updateUserButton:(id)sender;
+
+
+
+//just a label that changes to notify confirmation when user clicks on "create new user" or "update existing user"
+@property (strong, nonatomic) IBOutlet UILabel *ConfirmLabel;
 
 
 //for Locations, CLLocation, GPS, lat, long, radius
