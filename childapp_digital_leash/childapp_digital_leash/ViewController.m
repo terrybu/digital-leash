@@ -19,8 +19,11 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     
-    
-    
+    locationManager = [[CLLocationManager alloc]init];
+    locationManager.delegate = self;
+    locationManager.desiredAccuracy = kCLLocationAccuracyBest;
+    [locationManager startUpdatingLocation];
+    NSLog(@"Started updating Location");
     
     //implementing return-key keyboard clear
     [self.usernameTextfield setDelegate:self];
@@ -39,6 +42,19 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+#pragma mark - CoreLocation Methods
+- (void)locationManager:(CLLocationManager *)locationManager didUpdateLocations:(NSArray *)locations {
+    CLLocation *myLocation = [locations lastObject];
+    
+    latitude = [[NSNumber numberWithFloat:myLocation.coordinate.latitude] stringValue];
+    longitude = [[NSNumber numberWithFloat:myLocation.coordinate.longitude] stringValue];
+    
+    NSLog(@"%@", latitude);
+    NSLog(@"%@", longitude);
+}
+
+
 
 - (IBAction)startUpdatingButton:(id)sender {
 }

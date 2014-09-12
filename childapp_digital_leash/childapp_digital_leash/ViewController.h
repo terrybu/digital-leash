@@ -12,6 +12,7 @@
 @interface ViewController : UIViewController <CLLocationManagerDelegate, NSURLConnectionDelegate, UITextFieldDelegate> {
     
     CLLocationManager *locationManager;
+    NSString *latitude, *longitude;
     int callCount;
     
 }
@@ -19,7 +20,6 @@
 
 //properties
 @property (nonatomic) NSString *username;
-@property (nonatomic) NSString *latitude, *longtitude;
 
 
 //IBOutlets
