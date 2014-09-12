@@ -36,8 +36,16 @@
     [self.radiusTextfield setDelegate:self];
     
     
-    //for Radius numberpad
+    //Implementing tap-out clear-keyboard functionality for the textfields
+    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc]
+                                   initWithTarget:self
+                                   action:@selector(dismissKeyboard)];
     
+    [self.view addGestureRecognizer:tap];
+    
+    
+    
+    //for Radius numberpad decimal keyboard functionality
     UIToolbar* numberToolbar = [[UIToolbar alloc]initWithFrame:CGRectMake(0, 0, 320, 50)];
 //    numberToolbar.barStyle = UIBarStyleBlackTranslucent;
     numberToolbar.items = [NSArray arrayWithObjects:
@@ -159,11 +167,9 @@
     return YES;
 }
 
-
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+-(void)dismissKeyboard {
+    [self.usernameTextfield resignFirstResponder];
+    [self.radiusTextfield resignFirstResponder];
 }
 
 -(void)cancelNumberPad{
@@ -176,6 +182,10 @@
     [self.radiusTextfield resignFirstResponder];
 }
 
-
+- (void)didReceiveMemoryWarning
+{
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
+}
 
 @end
