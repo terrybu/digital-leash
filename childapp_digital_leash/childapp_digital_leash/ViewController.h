@@ -7,7 +7,26 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <CoreLocation/CoreLocation.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <CLLocationManagerDelegate, NSURLConnectionDelegate, UITextFieldDelegate> {
+    
+    CLLocationManager *locationManager;
+    int callCount;
+    
+}
+
+
+//properties
+@property (nonatomic) NSString *username;
+@property (nonatomic) NSString *latitude, *longtitude;
+
+
+//IBOutlets
+@property (strong, nonatomic) IBOutlet UITextField *usernameTextfield;
+
+
+// IBActions
+- (IBAction)startUpdatingButton:(id)sender;
 
 @end

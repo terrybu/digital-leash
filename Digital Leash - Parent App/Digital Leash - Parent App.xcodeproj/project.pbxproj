@@ -35,23 +35,23 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		AA981B8619BE585E00F8B1FB /* Digital Leash.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Digital Leash.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA981B8619BE585E00F8B1FB /* Digital Leash - Parent App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Digital Leash - Parent App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA981B8919BE585E00F8B1FB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		AA981B8B19BE585E00F8B1FB /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		AA981B8D19BE585E00F8B1FB /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		AA981B9119BE585E00F8B1FB /* Digital Leash-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Digital Leash-Info.plist"; sourceTree = "<group>"; };
+		AA981B9119BE585E00F8B1FB /* Digital Leash - Parent App-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Digital Leash - Parent App-Info.plist"; sourceTree = "<group>"; };
 		AA981B9319BE585E00F8B1FB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		AA981B9519BE585E00F8B1FB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		AA981B9719BE585E00F8B1FB /* Digital Leash-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Digital Leash-Prefix.pch"; sourceTree = "<group>"; };
+		AA981B9719BE585E00F8B1FB /* Digital Leash - Parent App-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Digital Leash - Parent App-Prefix.pch"; sourceTree = "<group>"; };
 		AA981B9819BE585E00F8B1FB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		AA981B9919BE585E00F8B1FB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		AA981B9C19BE585E00F8B1FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AA981B9E19BE585E00F8B1FB /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		AA981B9F19BE585E00F8B1FB /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		AA981BA119BE585E00F8B1FB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		AA981BA719BE585E00F8B1FB /* Digital LeashTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Digital LeashTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA981BA719BE585E00F8B1FB /* Digital Leash - Parent AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Digital Leash - Parent AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA981BA819BE585E00F8B1FB /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		AA981BB019BE585E00F8B1FB /* Digital LeashTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Digital LeashTests-Info.plist"; sourceTree = "<group>"; };
+		AA981BB019BE585E00F8B1FB /* Digital Leash - Parent AppTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Digital Leash - Parent AppTests-Info.plist"; sourceTree = "<group>"; };
 		AA981BB219BE585E00F8B1FB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		AA981BB419BE585E00F8B1FB /* Digital_LeashTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Digital_LeashTests.m; sourceTree = "<group>"; };
 		AAD014E919C350D600DB1412 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
@@ -95,8 +95,8 @@
 		AA981B8719BE585E00F8B1FB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				AA981B8619BE585E00F8B1FB /* Digital Leash.app */,
-				AA981BA719BE585E00F8B1FB /* Digital LeashTests.xctest */,
+				AA981B8619BE585E00F8B1FB /* Digital Leash - Parent App.app */,
+				AA981BA719BE585E00F8B1FB /* Digital Leash - Parent AppTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -130,10 +130,10 @@
 		AA981B9019BE585E00F8B1FB /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				AA981B9119BE585E00F8B1FB /* Digital Leash-Info.plist */,
+				AA981B9119BE585E00F8B1FB /* Digital Leash - Parent App-Info.plist */,
 				AA981B9219BE585E00F8B1FB /* InfoPlist.strings */,
 				AA981B9519BE585E00F8B1FB /* main.m */,
-				AA981B9719BE585E00F8B1FB /* Digital Leash-Prefix.pch */,
+				AA981B9719BE585E00F8B1FB /* Digital Leash - Parent App-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -150,7 +150,7 @@
 		AA981BAF19BE585E00F8B1FB /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				AA981BB019BE585E00F8B1FB /* Digital LeashTests-Info.plist */,
+				AA981BB019BE585E00F8B1FB /* Digital Leash - Parent AppTests-Info.plist */,
 				AA981BB119BE585E00F8B1FB /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
@@ -159,9 +159,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		AA981B8519BE585E00F8B1FB /* Digital Leash */ = {
+		AA981B8519BE585E00F8B1FB /* Digital Leash - Parent App */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AA981BB819BE585E00F8B1FB /* Build configuration list for PBXNativeTarget "Digital Leash" */;
+			buildConfigurationList = AA981BB819BE585E00F8B1FB /* Build configuration list for PBXNativeTarget "Digital Leash - Parent App" */;
 			buildPhases = (
 				AA981B8219BE585E00F8B1FB /* Sources */,
 				AA981B8319BE585E00F8B1FB /* Frameworks */,
@@ -171,14 +171,14 @@
 			);
 			dependencies = (
 			);
-			name = "Digital Leash";
+			name = "Digital Leash - Parent App";
 			productName = "Digital Leash";
-			productReference = AA981B8619BE585E00F8B1FB /* Digital Leash.app */;
+			productReference = AA981B8619BE585E00F8B1FB /* Digital Leash - Parent App.app */;
 			productType = "com.apple.product-type.application";
 		};
-		AA981BA619BE585E00F8B1FB /* Digital LeashTests */ = {
+		AA981BA619BE585E00F8B1FB /* Digital Leash - Parent AppTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AA981BBB19BE585E00F8B1FB /* Build configuration list for PBXNativeTarget "Digital LeashTests" */;
+			buildConfigurationList = AA981BBB19BE585E00F8B1FB /* Build configuration list for PBXNativeTarget "Digital Leash - Parent AppTests" */;
 			buildPhases = (
 				AA981BA319BE585E00F8B1FB /* Sources */,
 				AA981BA419BE585E00F8B1FB /* Frameworks */,
@@ -189,9 +189,9 @@
 			dependencies = (
 				AA981BAD19BE585E00F8B1FB /* PBXTargetDependency */,
 			);
-			name = "Digital LeashTests";
+			name = "Digital Leash - Parent AppTests";
 			productName = "Digital LeashTests";
-			productReference = AA981BA719BE585E00F8B1FB /* Digital LeashTests.xctest */;
+			productReference = AA981BA719BE585E00F8B1FB /* Digital Leash - Parent AppTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -208,7 +208,7 @@
 					};
 				};
 			};
-			buildConfigurationList = AA981B8119BE585E00F8B1FB /* Build configuration list for PBXProject "Digital Leash" */;
+			buildConfigurationList = AA981B8119BE585E00F8B1FB /* Build configuration list for PBXProject "Digital Leash - Parent App" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -221,8 +221,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				AA981B8519BE585E00F8B1FB /* Digital Leash */,
-				AA981BA619BE585E00F8B1FB /* Digital LeashTests */,
+				AA981B8519BE585E00F8B1FB /* Digital Leash - Parent App */,
+				AA981BA619BE585E00F8B1FB /* Digital Leash - Parent AppTests */,
 			);
 		};
 /* End PBXProject section */
@@ -272,7 +272,7 @@
 /* Begin PBXTargetDependency section */
 		AA981BAD19BE585E00F8B1FB /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = AA981B8519BE585E00F8B1FB /* Digital Leash */;
+			target = AA981B8519BE585E00F8B1FB /* Digital Leash - Parent App */;
 			targetProxy = AA981BAC19BE585E00F8B1FB /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -383,9 +383,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Digital Leash/Digital Leash-Prefix.pch";
-				INFOPLIST_FILE = "Digital Leash/Digital Leash-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "Digital Leash/Digital Leash - Parent App-Prefix.pch";
+				INFOPLIST_FILE = "Digital Leash/Digital Leash - Parent App-Info.plist";
+				PRODUCT_NAME = "Digital Leash - Parent App";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -396,9 +396,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Digital Leash/Digital Leash-Prefix.pch";
-				INFOPLIST_FILE = "Digital Leash/Digital Leash-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "Digital Leash/Digital Leash - Parent App-Prefix.pch";
+				INFOPLIST_FILE = "Digital Leash/Digital Leash - Parent App-Info.plist";
+				PRODUCT_NAME = "Digital Leash - Parent App";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -419,8 +419,8 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = "Digital LeashTests/Digital LeashTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				INFOPLIST_FILE = "Digital LeashTests/Digital Leash - Parent AppTests-Info.plist";
+				PRODUCT_NAME = "Digital Leash - Parent AppTests";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -438,8 +438,8 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Digital Leash/Digital Leash-Prefix.pch";
-				INFOPLIST_FILE = "Digital LeashTests/Digital LeashTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				INFOPLIST_FILE = "Digital LeashTests/Digital Leash - Parent AppTests-Info.plist";
+				PRODUCT_NAME = "Digital Leash - Parent AppTests";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -448,7 +448,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		AA981B8119BE585E00F8B1FB /* Build configuration list for PBXProject "Digital Leash" */ = {
+		AA981B8119BE585E00F8B1FB /* Build configuration list for PBXProject "Digital Leash - Parent App" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AA981BB619BE585E00F8B1FB /* Debug */,
@@ -457,7 +457,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AA981BB819BE585E00F8B1FB /* Build configuration list for PBXNativeTarget "Digital Leash" */ = {
+		AA981BB819BE585E00F8B1FB /* Build configuration list for PBXNativeTarget "Digital Leash - Parent App" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AA981BB919BE585E00F8B1FB /* Debug */,
@@ -466,7 +466,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AA981BBB19BE585E00F8B1FB /* Build configuration list for PBXNativeTarget "Digital LeashTests" */ = {
+		AA981BBB19BE585E00F8B1FB /* Build configuration list for PBXNativeTarget "Digital Leash - Parent AppTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AA981BBC19BE585E00F8B1FB /* Debug */,

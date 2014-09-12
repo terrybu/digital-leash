@@ -34,8 +34,6 @@
     //Setting delegate for UITextFieldDelegate
     [self.usernameTextfield setDelegate:self];
     [self.radiusTextfield setDelegate:self];
-    
-    
     //Implementing tap-out clear-keyboard functionality for the textfields
     UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc]
                                    initWithTarget:self
