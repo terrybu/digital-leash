@@ -21,6 +21,7 @@
 		AA981BAB19BE585E00F8B1FB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA981B8D19BE585E00F8B1FB /* UIKit.framework */; };
 		AA981BB319BE585E00F8B1FB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AA981BB119BE585E00F8B1FB /* InfoPlist.strings */; };
 		AA981BB519BE585E00F8B1FB /* Digital_LeashTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AA981BB419BE585E00F8B1FB /* Digital_LeashTests.m */; };
+		AAD014EA19C350D600DB1412 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAD014E919C350D600DB1412 /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		AA981BB019BE585E00F8B1FB /* Digital LeashTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Digital LeashTests-Info.plist"; sourceTree = "<group>"; };
 		AA981BB219BE585E00F8B1FB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		AA981BB419BE585E00F8B1FB /* Digital_LeashTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Digital_LeashTests.m; sourceTree = "<group>"; };
+		AAD014E919C350D600DB1412 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AAD014EA19C350D600DB1412 /* CoreLocation.framework in Frameworks */,
 				AA981B8C19BE585E00F8B1FB /* CoreGraphics.framework in Frameworks */,
 				AA981B8E19BE585E00F8B1FB /* UIKit.framework in Frameworks */,
 				AA981B8A19BE585E00F8B1FB /* Foundation.framework in Frameworks */,
@@ -101,6 +104,7 @@
 		AA981B8819BE585E00F8B1FB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				AAD014E919C350D600DB1412 /* CoreLocation.framework */,
 				AA981B8919BE585E00F8B1FB /* Foundation.framework */,
 				AA981B8B19BE585E00F8B1FB /* CoreGraphics.framework */,
 				AA981B8D19BE585E00F8B1FB /* UIKit.framework */,
@@ -460,6 +464,7 @@
 				AA981BBA19BE585E00F8B1FB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AA981BBB19BE585E00F8B1FB /* Build configuration list for PBXNativeTarget "Digital LeashTests" */ = {
 			isa = XCConfigurationList;
@@ -468,6 +473,7 @@
 				AA981BBD19BE585E00F8B1FB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

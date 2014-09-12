@@ -7,15 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <CoreLocation/CoreLocation.h>
 
-@interface ViewController : UIViewController <NSURLConnectionDelegate, UITextFieldDelegate> {
+@interface ViewController : UIViewController <CLLocationManagerDelegate, NSURLConnectionDelegate, UITextFieldDelegate> {
     
 }
 
-@property (strong, nonatomic) NSMutableURLRequest *myURLRequest;
-
 //For Input Username and Create New User
-
 @property (strong, nonatomic) IBOutlet UITextField *usernameTextfield;
 @property (strong, nonatomic) NSString *tempStringHolder;
 
@@ -24,7 +22,21 @@
 @property (strong, nonatomic) IBOutlet UILabel *createNewUserConfirmLabel;
 
 
-//From Check Location
+//for Locations, CLLocation, GPS, lat, long, radius
+@property (strong, nonatomic) CLLocationManager *locationManager;
+@property (strong, nonatomic) CLLocation *myLocation;
+
+@property (strong, nonatomic) IBOutlet UITextField *longitudeTextfield;
+
+@property (strong, nonatomic) IBOutlet UITextField *latitudeTextfield;
+
+@property (strong, nonatomic) IBOutlet UITextField *radiusTextfield;
+
+
+
+//For making requests
+@property (strong, nonatomic) NSMutableURLRequest *myURLRequest;
+
 
 
 @end

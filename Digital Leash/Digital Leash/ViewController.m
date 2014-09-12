@@ -20,17 +20,50 @@
     [super viewDidLoad];
     
     
-    
+    //For CLLocation
+    if([CLLocationManager locationServicesEnabled]){
+        NSLog(@"location services enabled");
+        CLLocationManager *locationManager = [[CLLocationManager alloc] init];
+        [locationManager setDesiredAccuracy:kCLLocationAccuracyBest];
+        [self setLocationManager: locationManager];
+        [self.locationManager setDelegate:self];
+        [self.locationManager startUpdatingLocation];
+        NSLog(@"Started updating Location");
+    }
+
+    //Setting delegate for UITextFieldDelegate
     [self.usernameTextfield setDelegate:self];
+    [self.radiusTextfield setDelegate:self];
     
-	// Do any additional setup after loading the view, typically from a nib.
+    
+    //for Radius numberpad
+    
+    UIToolbar* numberToolbar = [[UIToolbar alloc]initWithFrame:CGRectMake(0, 0, 320, 50)];
+//    numberToolbar.barStyle = UIBarStyleBlackTranslucent;
+    numberToolbar.items = [NSArray arrayWithObjects:
+                           [[UIBarButtonItem alloc]initWithTitle:@"Cancel" style:UIBarButtonItemStyleBordered target:self action:@selector(cancelNumberPad)],
+                           [[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace target:nil action:nil],
+                           [[UIBarButtonItem alloc]initWithTitle:@"Apply" style:UIBarButtonItemStyleDone target:self action:@selector(doneWithNumberPad)],
+                           nil];
+    [numberToolbar sizeToFit];
+    self.radiusTextfield.inputAccessoryView = numberToolbar;
+	
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+
+
+
+#pragma mark CLLocationManager Delegate Methods
+- (void)locationManager:(CLLocationManager *)locationManager
+     didUpdateLocations:(NSArray *)locations {
+    self.myLocation = [locations lastObject];
+    NSLog(@"%f", self.myLocation.coordinate.latitude);
+    NSLog(@"%f", self.myLocation.coordinate.longitude);
+    self.latitudeTextfield.text = [NSString stringWithFormat: @"%.5f", self.myLocation.coordinate.latitude];
+    self.longitudeTextfield.text = [NSString stringWithFormat: @"%.5f", self.myLocation.coordinate.longitude];
 }
+
+
 
 - (IBAction)createNewUserButton:(id)sender {
     
@@ -39,9 +72,9 @@
         NSURL *requestURL = [NSURL URLWithString:@"http://protected-wildwood-8664.herokuapp.com/users"];
         NSDictionary *userDetails = @{@"user": @{
                                               @"username": self.usernameTextfield.text,
-                                              @"latitude": @11,
-                                              @"longitude": @11,
-                                              @"radius": @11},
+                                              @"latitude": self.latitudeTextfield.text,
+                                              @"longitude": self.longitudeTextfield.text,
+                                              @"radius": self.radiusTextfield.text},
                                       @"commit":@"Create User",
                                       @"action":@"update",
                                       @"controller":@"users"
@@ -122,13 +155,26 @@
 
 -(BOOL)textFieldShouldReturn:(UITextField *)textField {
     [self.usernameTextfield resignFirstResponder];
+    [self.radiusTextfield resignFirstResponder];
     return YES;
 }
 
 
+- (void)didReceiveMemoryWarning
+{
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
+}
 
+-(void)cancelNumberPad{
+    [self.radiusTextfield resignFirstResponder];
+    self.radiusTextfield.text = @"";
+}
 
-
+-(void)doneWithNumberPad{
+    NSString *numberFromTheKeyboard = self.radiusTextfield.text;
+    [self.radiusTextfield resignFirstResponder];
+}
 
 
 
