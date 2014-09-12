@@ -99,11 +99,12 @@
         
         //create url connection and fire the request you made above
         NSURLConnection *connect = [[NSURLConnection alloc] initWithRequest: self.myURLRequest delegate: self];
+        connect = nil;
+
+        //Post-Request confirmation
         self.ConfirmLabel.text = [NSString stringWithFormat:@"You did it, %@!",self.usernameTextfield.text];
         self.tempStringHolder = self.usernameTextfield.text;
         self.usernameTextfield.text = @"";
-        
-        [self.usernameTextfield resignFirstResponder];
     }
 
     else {
@@ -121,7 +122,8 @@
 - (IBAction)updateUserButton:(id)sender {
     if (self.usernameTextfield.text && self.usernameTextfield.text.length > 0) {
         //creating the request URL
-        NSURL *requestURL = [NSURL URLWithString:@"http://protected-wildwood-8664.herokuapp.com/users"];
+        NSString *urlstring = [NSString stringWithFormat: @"http://protected-wildwood-8664.herokuapp.com/users/%@", self.usernameTextfield.text];
+        NSURL *requestURL = [NSURL URLWithString:urlstring];
         NSDictionary *userDetails = @{@"user": @{
                                               @"username": self.usernameTextfield.text,
                                               @"latitude": self.latitudeTextfield.text,
@@ -143,6 +145,10 @@
         
         //create url connection and fire the request you made above
         NSURLConnection *connect = [[NSURLConnection alloc] initWithRequest: self.myURLRequest delegate: self];
+        connect = nil;
+        
+        
+        //Post-Request Confirmation
         self.ConfirmLabel.text = [NSString stringWithFormat:@"You updated it, %@!",self.usernameTextfield.text];
         self.tempStringHolder = self.usernameTextfield.text;
 //        self.usernameTextfield.text = @"";
@@ -169,6 +175,7 @@
     //response has been received, we initialize the instance var we created in h file
     //then we append data to it in the didReceiveData method
     //    responseData = [[NSMutableData alloc] init];
+    NSLog(@"%@", [response description]);
 }
 
 - (void)connection: (NSURLConnection *)connection didReceiveData:(NSData *) dataYouGot {
@@ -187,12 +194,13 @@
     // You can parse the stuff in your instance variable now or do whatever you want
     
     NSLog(@"connection finished");
-    NSLog(@"%@ was created on Oren's server", self.tempStringHolder);
+    NSLog(@"%@ was created/updated on Oren's server", self.tempStringHolder);
 }
 
 - (void)connection:(NSURLConnection *)connection didFailWithError:(NSError *)error {
     // The request has failed for some reason!
     // Check the error var
+    NSLog(@"%@", [error localizedDescription]);
 }
 
 
